@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 Form</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+        <script src="https://kit.fontawesome.com/0648605bd7.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+<div class="d-flex flex-column justify-content-center align-items-center min-vh-100">
+<div class="container"> 
+<div class="card border border-dark-mute"> 
+
+    <!-- titulo payment... -->
+    <div class="card-header h4"> 
+         Payment form example 
+    </div>
+
+    <div class="card-body"> 
+
+    <!-- alerta roja -->
+    <div class="alert alert-danger mt-1 mb-1" role="alert">
+        Some fields are missing 
+    </div>
+
+    <!-- card cvc amount -->
+    <div class="row mt-1 mb-1">
+        <div class="col">
+            <label for="card"> Card # </label>
+            <input type="text" id="card" class="form-control" placeholder="XXXXXXXXXXXXXXX" aria-label="Card">
+        </div>
+        <div class="col">
+            <label for="cvc"> CVC # </label>
+            <input type="text" id="cvc" class="form-control" placeholder="0000" aria-label="cvc">
+        </div>
+        <div class="col">
+            <label for="amount"> Amount </label>
+            <div class="input-group">
+            <div class="input-group-text"> $ </div>
+            <input type="text" id="amount" class="form-control" placeholder="Amount" aria-label="amount">
+            </div>
+        </div>
+    </div>
+
+    <!-- name and lastname -->
+    <div class="row mt-1 mb-1">
+        <div class="col-6">
+          <label for="name"> First Name </label>
+          <input type="text" id="name" class="form-control" placeholder="First name" aria-label="First name">
+        </div>
+        <div class="col-6">
+          <label for="Lastname"> Last Name </label>
+          <input type="text" id="Lastname" class="form-control" placeholder="Last name" aria-label="Last name">
+        </div>
+    </div>
+
+    <!-- city state postalcode -->
+    <div class="row mt-1 mb-1">
+        <div class="col-6">
+            <label for="city"> City </label>
+            <input type="text" id="city" class="form-control" aria-label="City">
+        </div>
+        <div class="col-3">
+            <label for="state"> State </label>
+            <select id="state" class="form-select" aria-label="State">
+                <option selected>Pick a state</option>
+                <option value="1">Alabama</option>
+                <option value="1">Texas</option>
+                <option value="1">Boston</option>
+                <option value="1">Florida</option>
+                <option value="1">Chicago</option>
+                <option value="1">Conneticut</option>
+                <option value="2">Alaska</option>
+                <option value="3">Arizona</option>
+            </select>
+        </div>
+        <div class="col-3">
+            <label for="Postalcode"> Postal code </label>
+            <input type="text" id="Postalcode" class="form-control" placeholder="Amount" aria-label="postal code">
+        </div>
+    </div>
+    
+    <!-- message y cards -->
+    <div class="row justify-content-between mt-1 mb-1">
+        <div class="col-6">
+            <div class="row w-100">
+                <div class="col">
+                    <p>We accept:</p>
+                    <div class="col"> 
+                        <div class="row bg-secondary rounded border m-1">
+                        <div class="d-inline-flex"> 
+                            <div class="col-2 col-1-sm d-flex align-items-center me-1"> 
+                                <input type="radio" id="master" name="card"> 
+                                <label for="master"> <i class="fa-brands fa-cc-mastercard fa-sm m-1"></i> </label>
+                            </div>
+                             
+                            <div class="col-2 col-1-sm d-flex align-items-center m-1">
+                                <input type="radio" id="visa" name="card"> 
+                                <label for="visa"> <i class="fa-brands fa-cc-visa fa-sm m-1"></i> </label>
+                            </div>
+                             
+                            <div class="col-2 col-1-sm d-flex align-items-center m-1"> 
+                             <input type="radio" id="diners" name="card"> 
+                             <label for="diners"> <i class="fa-brands fa-cc-diners-club fa-sm m-1"></i> </label>
+                            </div>
+                             
+                             <div class="col-2 col-1-sm d-flex align-items-center m-1">
+                                 <input type="radio" id="amex" name="card" class="form-check-control"> 
+                                 <label for="amex"> <i class="fa-brands fa-cc-amex fa-sm m-1"></i> </label>
+                             </div>
+
+                        </div>
+                       
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-6">
+            <div class="mb-3">
+                <label for="Message" class="form-label"> Message </label>
+                <textarea class="form-control" id="Message" rows="3"></textarea>
+              </div>
+        </div>
+    </div>
+
+</div>
+
+    <div class="card-footer align-items-end text-end">
+        <input type="reset" value="Cancel" class="btn btn-secondary btn-sm">
+        <input type="submit" value="Send" class="btn btn-primary btn-sm">
+    </div>
+
+</div>
+</div>
+</div>   
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
